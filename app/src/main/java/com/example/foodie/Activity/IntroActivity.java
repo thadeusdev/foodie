@@ -2,6 +2,7 @@ package com.example.foodie.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,6 +19,7 @@ public class IntroActivity extends BaseActivity {
         setContentView(binding.getRoot());
         
         setVariable();
+        getWindow().setStatusBarColor(Color.parseColor("#FFE4B5"));
     }
 
     private void setVariable() {
@@ -28,7 +30,7 @@ public class IntroActivity extends BaseActivity {
             }
         });
 
-        binding.loginBtn.setOnClickListener(new View.OnClickListener() {
+        binding.signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
