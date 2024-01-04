@@ -33,7 +33,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Food"
+                    android:text="Yum"
                     android:textSize="45sp"
                     android:textStyle="bold"
                     android:textColor="@color/blue_gray"/>
@@ -42,7 +42,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ie"
+                    android:text="my 😋"
                     android:textSize="45sp"
                     android:textColor="@color/blue_gray"/>
             </LinearLayout>
