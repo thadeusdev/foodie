@@ -1,7 +1,6 @@
-package com.example.foodie.Activity;
+package com.example.yummy.Activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,10 +8,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.foodie.Adapter.FoodListAdapter;
-import com.example.foodie.Domain.Foods;
-import com.example.foodie.R;
-import com.example.foodie.databinding.ActivityListFoodsBinding;
+import com.example.yummy.Adapter.FoodListAdapter;
+import com.example.yummy.Domain.Foods;
+import com.example.yummy.databinding.ActivityListFoodsBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -62,27 +60,36 @@ public class ListFoodsActivity extends BaseActivity {
                     for(DataSnapshot issue: snapshot.getChildren()){
                         list.add(issue.getValue(Foods.class));
                     }
-                    if(list.size()>0){
+                    if(list.size() > 0){
                         binding.foodListView.setLayoutManager(new GridLayoutManager(ListFoodsActivity.this,2));
                         adapterListFood=new FoodListAdapter(list);
                         binding.foodListView.setAdapter(adapterListFood);
+                    }else{
+                        // Handle the case when there are no items to display
+                        Log.d("ListFoodsActivity", "No items to display");
                     }
+                    binding.progressBar.setVisibility(View.GONE);
+                }else{
+                    // Handle the case when there are no results from the query
+                    Log.d("ListFoodsActivity", "No results from the query");
                     binding.progressBar.setVisibility(View.GONE);
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("ListFoodsActivity", "Database error: " + error.getMessage());
+                // Handle the database error if needed
+                binding.progressBar.setVisibility(View.GONE);
             }
         });
     }
 
     private void getIntentExtra() {
-        categoryId=getIntent().getIntExtra("CategoryId",0);
-        categoryName=getIntent().getStringExtra("CategoryName");
-        searchText=getIntent().getStringExtra("text");
-        isSearch=getIntent().getBooleanExtra("isSearch",false);
+        categoryId = getIntent().getIntExtra("CategoryId",0);
+        categoryName = getIntent().getStringExtra("CategoryName");
+        searchText = getIntent().getStringExtra("text");
+        isSearch = getIntent().getBooleanExtra("isSearch",false);
 
         binding.titleTxt.setText(categoryName);
         binding.backBtn.setOnClickListener(new View.OnClickListener() {

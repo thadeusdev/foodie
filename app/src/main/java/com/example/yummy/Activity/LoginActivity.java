@@ -1,15 +1,13 @@
-package com.example.foodie.Activity;
+package com.example.yummy.Activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.foodie.R;
-import com.example.foodie.databinding.ActivityLoginBinding;
+import com.example.yummy.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

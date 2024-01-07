@@ -1,4 +1,4 @@
-package com.example.foodie;
+package com.example.yummy;
 
 import android.content.Context;
 

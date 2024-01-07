@@ -1,4 +1,4 @@
-package com.example.foodie.Domain;
+package com.example.yummy.Domain;
 
 public class Category {
     private int id;

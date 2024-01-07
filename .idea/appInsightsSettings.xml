@@ -9,17 +9,14 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.foodie" />
-                  <option name="mobileSdkAppId" value="1:493167515115:android:544f9c23409252e966f5ae" />
+                  <option name="appId" value="com.example.yummy" />
+                  <option name="mobileSdkAppId" value="1:493167515115:android:2ffc8834bbe9f06266f5ae" />
                   <option name="projectId" value="foodie-5b5d6" />
                   <option name="projectNumber" value="493167515115" />
                 </ConnectionSetting>
               </option>
-              <option name="failureTypes">
-                <list />
-              </option>
-              <option name="signal" value="SIGNAL_EARLY" />
-              <option name="timeIntervalDays" value="ONE_DAY" />
+              <option name="signal" value="SIGNAL_UNSPECIFIED" />
+              <option name="timeIntervalDays" value="THIRTY_DAYS" />
               <option name="visibilityType" value="ALL" />
             </InsightsFilterSettings>
           </value>

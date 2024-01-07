@@ -1,14 +1,11 @@
-package com.example.foodie.Activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.yummy.Activity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.foodie.R;
-import com.example.foodie.databinding.ActivityIntroBinding;
+import com.example.yummy.databinding.ActivityIntroBinding;
 
 public class IntroActivity extends BaseActivity {
     ActivityIntroBinding binding;

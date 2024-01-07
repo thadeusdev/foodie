@@ -1,4 +1,4 @@
-package com.example.foodie.Adapter;
+package com.example.yummy.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,12 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.example.foodie.Activity.ListFoodsActivity;
-import com.example.foodie.Domain.Category;
-import com.example.foodie.Domain.Foods;
-import com.example.foodie.R;
+import com.example.yummy.Activity.ListFoodsActivity;
+import com.example.yummy.Domain.Category;
+import com.example.yummy.R;
 
 import java.util.ArrayList;
 
@@ -85,8 +82,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewho
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(context, ListFoodsActivity.class);
-                intent.putExtra("CategoryId",items.get(position).getId());
-                intent.putExtra("CategoryName",items.get(position).getName());
+                intent.putExtra("CategoryId", items.get(position).getId());
+                intent.putExtra("CategoryName", items.get(position).getName());
                 context.startActivity(intent);
             }
         });

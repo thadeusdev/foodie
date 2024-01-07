@@ -1,4 +1,4 @@
-package com.example.foodie.Activity;
+package com.example.yummy.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -10,15 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 
-import com.example.foodie.Adapter.BestFoodsAdapter;
-import com.example.foodie.Adapter.CategoryAdapter;
-import com.example.foodie.Domain.Category;
-import com.example.foodie.Domain.Foods;
-import com.example.foodie.Domain.Location;
-import com.example.foodie.Domain.Price;
-import com.example.foodie.Domain.Time;
-import com.example.foodie.R;
-import com.example.foodie.databinding.ActivityMainBinding;
+import com.example.yummy.Adapter.BestFoodsAdapter;
+import com.example.yummy.Adapter.CategoryAdapter;
+import com.example.yummy.Domain.Category;
+import com.example.yummy.Domain.Foods;
+import com.example.yummy.Domain.Location;
+import com.example.yummy.Domain.Price;
+import com.example.yummy.Domain.Time;
+import com.example.yummy.R;
+import com.example.yummy.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,7 +27,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends BaseActivity {
     private ActivityMainBinding binding;

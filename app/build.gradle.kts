@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.foodie"
+    namespace = "com.example.yummy"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.foodie"
+        applicationId = "com.example.yummy"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

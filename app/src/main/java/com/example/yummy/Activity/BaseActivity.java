@@ -1,10 +1,10 @@
-package com.example.foodie.Activity;
+package com.example.yummy.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.foodie.R;
+import com.example.yummy.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
