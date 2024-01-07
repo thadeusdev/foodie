@@ -55,7 +55,6 @@ public class ListFoodsActivity extends BaseActivity {
         }else{
             query=myRef.orderByChild("CategoryId").equalTo(categoryId);
         }
-        Log.d("ListFoodsActivity", "Query: " + query.toString());
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
